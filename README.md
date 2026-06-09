@@ -29,33 +29,32 @@ It analyses your income, expenses, and debts, then provides personalised recomme
 ---
 
 ## Project Structure
+
+```
 spendME/
-├── .env # API key
-├── app.py # Main Streamlit entry point
-├── config.py # App constants & logging
+├── .env                         # API key 
+├── app.py                       # Streamlit entry point
+├── config.py                    # App constants & logging
 ├── agents/
-│ ├── init.py
-│ ├── finance_advisor.py # FinanceAdvisorSystem (agents + runner)
-│ └── preprocessors.py # Data preprocessing helpers
-├── schema/ # Pydantic models (renamed from 'models' to avoid circular imports)
-│ ├── init.py
-│ ├── budget.py
-│ ├── savings.py
-│ └── debt.py
+│   ├── __init__.py
+│   ├── finance_advisor.py       # FinanceAdvisorSystem (agents + runner)
+│   └── preprocessors.py         # Data preprocessing helpers
+├── schema/                      # Pydantic models (renamed to avoid circular imports)
+│   ├── __init__.py
+│   ├── budget.py
+│   ├── savings.py
+│   └── debt.py
 ├── utils/
-│ ├── init.py
-│ ├── csv_parser.py # CSV validation & parsing
-│ ├── display_helpers.py # Plotly + Streamlit output functions
-│ └── json_helpers.py # Safe JSON parsing
+│   ├── __init__.py
+│   ├── csv_parser.py            # CSV validation & parsing
+│   ├── display_helpers.py       # Plotly + Streamlit output functions
+│   └── json_helpers.py          # Safe JSON parsing
 └── ui/
-├── init.py
-├── sidebar.py # API key notice & CSV template download
-├── input_tabs.py # User input forms (income, expenses, debts)
-└── results_tabs.py # Display analysis results
-
-
-
----
+    ├── __init__.py
+    ├── sidebar.py               # API key notice & CSV template download
+    ├── input_tabs.py            # User input forms (income, expenses, debts)
+    └── results_tabs.py          # Display analysis results
+```
 
 <!-- ## Getting Started
 
