@@ -1,11 +1,11 @@
-# 💰 spendME - AI Financial Coach
+# spendME - AI Financial Coach
 
 **spendME** is an AI‑powered financial advisor built with Google’s Agent Development Kit (ADK) and Gemini AI.  
 It analyses your income, expenses, and debts, then provides personalised recommendations for budgeting, savings, and debt reduction using three specialised agents.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multi‑Agent Analysis**  
   - *Budget Analysis Agent* – categorises spending, finds savings opportunities  
@@ -30,33 +30,34 @@ It analyses your income, expenses, and debts, then provides personalised recomme
 
 ## Project Structure
 spendME/
-├── .env # Your Gemini API key
+├── .env # API key
 ├── app.py # Main Streamlit entry point
 ├── config.py # App constants & logging
 ├── agents/
-│ ├── __init__.py
+│ ├── init.py
 │ ├── finance_advisor.py # FinanceAdvisorSystem (agents + runner)
 │ └── preprocessors.py # Data preprocessing helpers
 ├── schema/ # Pydantic models (renamed from 'models' to avoid circular imports)
-│ ├── __init__.py
+│ ├── init.py
 │ ├── budget.py
 │ ├── savings.py
 │ └── debt.py
 ├── utils/
-│ ├── __init__.py
+│ ├── init.py
 │ ├── csv_parser.py # CSV validation & parsing
 │ ├── display_helpers.py # Plotly + Streamlit output functions
 │ └── json_helpers.py # Safe JSON parsing
 └── ui/
-├── __init__.py
+├── init.py
 ├── sidebar.py # API key notice & CSV template download
 ├── input_tabs.py # User input forms (income, expenses, debts)
 └── results_tabs.py # Display analysis results
 
 
+
 ---
 
-## Getting Started
+<!-- ## Getting Started
 
 ### 1. Clone the repository
 
@@ -79,4 +80,4 @@ GOOGLE_API_KEY=your_actual_gemini_api_key_here
 
 5. Run the app
 
-streamlit run app.py
+streamlit run app.py -->
